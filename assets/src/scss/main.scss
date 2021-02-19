@@ -1,0 +1,66 @@
+/*!
+* WS Starter
+* Designed by LRS Web Solutions (http://lrswebsolutions.com)
+* Visit http://lrswebsolutions.com
+*/
+
+// Normalize
+@import 'vendor/normalize';
+
+// Presets & Variables
+@import 'presets/variables';
+@import 'presets/mixins';
+@import 'presets/grid-settings';
+@import 'presets/helper-classes';
+
+// Additional Presets & Variables
+@import 'presets/grid-settings';
+@import 'presets/helper-classes';
+
+// Vendor
+@import 'vendor/accessibility';
+@import 'vendor/accordions';
+// tiny mce
+@import 'vendor/columns';
+// article
+@import 'vendor/article-columns';
+// article grid
+@import 'vendor/article-grid';
+@import 'vendor/forms';
+@import 'vendor/modal';
+@import 'vendor/magnific-popup';
+@import 'vendor/responsive-videos';
+@import 'vendor/search-results';
+@import 'vendor/tables';
+@import 'vendor/tabs';
+@import 'vendor/alerts';
+@import 'vendor/speedbump';
+@import 'vendor/cta';
+@import 'vendor/images';
+
+// Layout
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';
+@import 'layout/sidebar';
+
+// Components
+@import 'components/accordions';
+@import 'components/branding';
+@import 'components/columns';
+@import 'components/forms';
+@import 'components/general';
+@import 'components/iebar';
+@import 'components/nav-primary';
+@import 'components/nav-secondary';
+@import 'components/tabs';
+@import 'components/typography';
+
+// Modules
+@import 'modules/blog';
+@import 'modules/events';
+@import 'modules/gallery';
+@import 'modules/locations';
+@import 'modules/news';
+@import 'modules/search-results';
+@import 'modules/videos';

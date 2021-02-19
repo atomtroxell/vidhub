@@ -1,0 +1,53 @@
+input[type='file'] {
+  width: 0.1px !important;
+  height: 0.1px !important;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.fileinput-label {
+  margin-left: 0;
+  margin-top: 20px;
+  padding: 15px 15px 15px 60px;
+  border: 1px solid #666666;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  font-family: runda, sans-serif;
+  cursor: pointer;
+
+  &:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f093';
+    font-size: 2rem;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  * {
+    pointer-events: none;
+  }
+
+  &.changed {
+    border-color: #cedb00;
+  }
+
+  &:hover {
+    border-color: #333;
+    background: #333;
+  }
+
+  &:focus,
+  &.has-focus {
+    background-color: #cedb00;
+  }
+}

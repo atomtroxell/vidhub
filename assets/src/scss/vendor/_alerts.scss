@@ -1,0 +1,80 @@
+.alerts {
+  position: relative;
+  background: gray;
+  color: white;
+
+  .alert {
+    display: none;
+    padding: 10px 15px;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+    @media screen and (min-width: $medium) {
+      padding: 16px 40px;
+    }
+
+    &:first-child {
+      display: block;
+    }
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover,
+    &:focus {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  &.multiple {
+    .alert {
+      padding: 10px 15px 10px 75px;
+
+      @media screen and (min-width: $medium) {
+        padding: 16px 40px 16px 100px;
+      }
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+
+  .alert-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 101;
+    font-size: 20px;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: $medium) {
+      left: 40px;
+    }
+
+    .alert-prev,
+    .alert-next {
+      display: inline-block;
+      padding-right: 4px;
+      width: 30px;
+      color: rgba(white, 0.5);
+      text-align: center;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: white;
+      }
+    }
+
+    .alert-next {
+      padding-right: 0;
+      padding-left: 4px;
+    }
+  }
+}

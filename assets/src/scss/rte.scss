@@ -1,0 +1,27 @@
+/*!
+* WS Starter
+* Designed by LRS Web Solutions (http://lrswebsolutions.com)
+* Visit http://lrswebsolutions.com
+*/
+
+// Presets & Variables
+@import 'presets/variables';
+@import 'presets/mixins';
+@import 'presets/grid-settings';
+@import 'presets/helper-classes';
+
+// Vendor
+@import 'vendor/accordions';
+@import 'vendor/forms';
+@import 'vendor/tables';
+@import 'vendor/tabs';
+@import 'vendor/article-columns';
+@import 'vendor/images';
+
+// Components
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/accordions';
+@import 'components/forms';
+@import 'components/tabs';
+@import 'components/cta';

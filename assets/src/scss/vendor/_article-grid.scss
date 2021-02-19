@@ -1,0 +1,103 @@
+.grid {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+  @include medium-up {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    width: calc(100% + 60px);
+  }
+
+  .column {
+    display: inline-block;
+    margin: 0 0 ($gutter / 2) 0;
+    width: 100%;
+    @include medium-up {
+      margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+      margin: 0;
+      padding: 0 ($gutter / 2) $gutter;
+    }
+
+    [class*='cta'] {
+      margin: 0;
+    }
+
+    &.column-2 {
+      width: 100%;
+      @include medium-up {
+        // width: calc((100% - #{$gutter}) / 12 * 4);
+        width: calc((100% - #{$gutter}) / 12 * 2);
+      }
+      @include large-up {
+        width: calc((100% - #{$gutter}) / 12 * 2);
+      }
+    }
+
+    &.column-3 {
+      width: 100%;
+      @include medium-up {
+        // width: calc((100% - #{$gutter}) / 12 * 6);
+        width: calc((100% - #{$gutter}) / 12 * 3);
+      }
+      @include large-up {
+        width: calc((100% - #{$gutter}) / 12 * 3);
+      }
+    }
+
+    &.column-4 {
+      width: 100%;
+      @include medium-up {
+        // width: calc((100% - #{$gutter}) / 12 * 6);
+        width: calc((100% - #{$gutter}) / 12 * 4);
+      }
+      @include large-up {
+        width: calc((100% - #{$gutter}) / 12 * 4);
+      }
+    }
+
+    &.column-5 {
+      width: 100%;
+      @include medium-up {
+        width: calc((100% - #{$gutter}) / 12 * 5);
+      }
+    }
+
+    &.column-6 {
+      width: 100%;
+      @include medium-up {
+        width: calc((100% - #{$gutter}) / 12 * 6);
+      }
+    }
+
+    &.column-7 {
+      width: 100%;
+      @include medium-up {
+        width: calc((100% - #{$gutter}) / 12 * 7);
+      }
+    }
+
+    &.column-8 {
+      width: 100%;
+      @include medium-up {
+        width: calc((100% - #{$gutter}) / 12 * 8);
+      }
+      // @include large-up {
+      // }
+    }
+
+    &.column-9 {
+      width: 100%;
+      @include medium-up {
+        width: calc((100% - #{$gutter}) / 12 * 9);
+      }
+    }
+
+    &.column-10 {
+      width: 100%;
+      @include medium-up {
+        width: calc((100% - #{$gutter}) / 12 * 10);
+      }
+    }
+  }
+}

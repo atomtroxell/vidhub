@@ -1,0 +1,103 @@
+﻿<%@ master language="vb" codefile="homepage.master.vb" inherits="themes_THEME-NAME_templates_homepage" %>
+
+<% response.contenttype = "text/html"%>
+
+<%-- registers --%>
+<%@ register src="~/views/pages/pages-metatitle.ascx" tagprefix="uc1" tagname="metatitle" %>
+<%@ register src="~/views/pages/pages-metakeywords.ascx" tagprefix="uc1" tagname="metakeywords" %>
+<%@ register src="~/views/pages/pages-metadescription.ascx" tagprefix="uc1" tagname="metadescription" %>
+<%@ register src="~/views/pages/pages-metaextras.ascx" tagprefix="uc1" tagname="metaextras" %>
+<%@ register src="~/views/pages/pages-metaicons.ascx" tagprefix="uc1" tagname="metaicons" %>
+<%@ register src="~/views/pages/pages-metarobots.ascx" tagprefix="uc1" tagname="metarobots" %>
+
+<%@ register src="~/views/pages/pages-googleanalytics.ascx" tagprefix="uc1" tagname="googleanalytics" %>
+<%@ register src="~/views/pages/pages-googletagmanager.ascx" tagprefix="uc1" tagname="googletagmanager" %>
+<%@ register src="~/views/pages/pages-googlesiteverification.ascx" tagprefix="uc1" tagname="googlesiteverification" %>
+<%@ register src="~/views/pages/pages-bingmsvalidate.ascx" tagprefix="uc1" tagname="bingmsvalidate" %>
+
+<%@ register src="~/views/pages/pages-browserwarning.ascx" tagprefix="uc1" tagname="browserwarning" %>
+<%@ register src="~/views/pages/pages-demowarning.ascx" tagprefix="uc1" tagname="demowarning" %>
+
+<%@ register src="~/views/pages/pages-breadcrumb.ascx" tagprefix="uc1" tagname="breadcrumbs" %>
+<%@ register src="~/views/pages/pages-content.ascx" tagprefix="uc1" tagname="content" %>
+<%@ register src="~/views/pages/pages-featuredcontent.ascx" tagprefix="uc1" tagname="featuredcontent" %>
+<%@ register src="~/views/pages/pages-subnavigation.ascx" tagprefix="uc1" tagname="subnavigation" %>
+
+<%-- theme --%>
+<%@ Register Src="~/themes/THEME-NAME/includes/css.ascx" TagPrefix="uc1" TagName="css" %>
+<%@ Register Src="~/themes/THEME-NAME/includes/js.ascx" TagPrefix="uc1" TagName="js" %>
+<%@ register src="~/themes/THEME-NAME/includes/header.ascx" tagprefix="uc1" tagname="header" %>
+<%@ register src="~/themes/THEME-NAME/includes/footer.ascx" tagprefix="uc1" tagname="footer" %>
+
+<%-- modules --%>
+
+
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+
+<head id="Head1" runat="server">
+  <!-- CSS -->
+  <uc1:css runat="server" ID="css" />
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+  <title></title>
+  <uc1:metatitle runat="server" id="metatitle" />
+  <uc1:metakeywords runat="server" id="metakeywords" />
+  <uc1:metadescription runat="server" id="metadescription" />
+  <uc1:metaextras runat="server" id="metaextras" />
+  <uc1:metaicons runat="server" id="metaicons" />
+  <uc1:metarobots runat="server" id="metarobots" />
+
+  <uc1:googleanalytics runat="server" id="googleanalytics" />
+  <uc1:googletagmanager runat="server" id="googletagmanager" />
+  <uc1:googlesiteverification runat="server" id="googlesiteverification" />
+  <uc1:bingmsvalidate runat="server" id="bingmsvalidate" />
+
+  <meta name="author" content="SITE-NAME">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-title" content="SITE-NAME">
+
+  <asp:contentplaceholder id="cpmeta" runat="server" />
+  <asp:contentplaceholder id="cphead" runat="server" />
+
+  <!-- icons -->
+  <!-- #include file="~/themes/THEME-NAME/includes/favicons.inc" -->
+
+  <!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body class="homepage" id="body1" runat="server">
+
+  <uc1:browserwarning runat="server" id="browserwarning" />
+  <uc1:demowarning runat="server" id="demowarning" />
+
+  <form id="form1" runat="server">
+    <asp:scriptmanager id="sm1" runat="server" />
+
+    <uc1:header runat="server" id="header" />
+
+    <main role="main" id="main">
+
+      <uc1:content runat="server" id="content" />
+      <asp:contentplaceholder id="cpcontent" runat="server" />
+
+    </main>
+
+    <uc1:footer runat="server" id="footer" />
+
+  </form>
+
+  <!-- Vendor JS -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="//code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- LRS JS -->
+  <uc1:js runat="server" ID="js" />
+  <asp:ContentPlaceHolder ID="cpscripts" runat="server" />
+</body>
+</html>

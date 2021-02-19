@@ -1,0 +1,32 @@
+a.skipcontent {
+  padding: 6px 8px;
+  position: fixed;
+  top: -40px;
+  left: 20px;
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: black;
+  -webkit-transition: top 1s ease-out, background 1s linear;
+  transition: top 1s ease-out, background 1s linear;
+  z-index: 500;
+
+  &:visited {
+    color: white;
+  }
+
+  &:focus,
+  &:hover {
+    position: fixed;
+    left: 20px;
+    top: 0px;
+    background: black;
+    color: white;
+    outline: 0;
+    -webkit-transition: top .1s ease-in, background .5s linear;
+    transition: top .1s ease-in, background .5s linear;
+  }
+}

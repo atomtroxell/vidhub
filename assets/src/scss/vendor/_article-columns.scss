@@ -1,0 +1,176 @@
+.columns {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+  @include medium-up {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  display: inline-block;
+  margin-bottom: ($gutter / 2);
+  width: 100%;
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+
+    &[data-arx-type] {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.col-2 {
+  @include medium-up {
+    width: calc(50% - (#{$gutter} / 2));
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.col-3 {
+  @include medium-up {
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    width: calc((100% - (#{$gutter} * 2)) / 3);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(3n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.col-4 {
+  @include medium-up {
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    width: calc((100% - (#{$gutter} * 3)) / 4);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(4n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.col-5 {
+  @include medium-up {
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - (#{$gutter} * 4)) / 5);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(5n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(5n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.col-6 {
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - (#{$gutter} * 5)) / 6);
+
+    &:not([data-arx-type]):nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:not([data-arx-type]):nth-of-type(6n+1) {
+      margin-left: 0;
+    }
+
+    &:not([data-arx-type]):nth-of-type(6n) {
+      margin-right: 0;
+    }
+  }
+}

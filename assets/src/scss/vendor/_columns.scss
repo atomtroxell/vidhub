@@ -1,0 +1,173 @@
+.two-column,
+.three-column,
+.four-column,
+.five-column,
+.six-column {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+  @include medium-up {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+.two-column .col {
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc(50% - (#{$gutter} / 2));
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.three-column .col {
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - (#{$gutter} * 2)) / 3);
+
+    &:nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:nth-of-type(3n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.four-column .col {
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - (#{$gutter} * 3)) / 4);
+
+    &:nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:nth-of-type(4n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.five-column .col {
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - (#{$gutter} * 4)) / 5);
+
+    &:nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:nth-of-type(5n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(5n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.six-column .col {
+  @include medium-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - #{$gutter}) / 2);
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  @include large-up {
+    margin: 0 ($gutter / 2) ($gutter / 2) ($gutter / 2);
+    width: calc((100% - (#{$gutter} * 5)) / 6);
+
+    &:nth-of-type(2n+1) {
+      margin-left: ($gutter / 2);
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: ($gutter / 2);
+    }
+
+    &:nth-of-type(6n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(6n) {
+      margin-right: 0;
+    }
+  }
+}

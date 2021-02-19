@@ -1,0 +1,165 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  @include medium-up {
+    max-width: 100%;
+  }
+
+  &.retina {
+    display: none;
+    max-width: 50%;
+  }
+
+  &[class*='left'] {
+    float: left;
+    max-width: 40%;
+    margin: 0 20px 15px 0;
+    @include medium-up {
+      margin: 0 50px 20px 0;
+    }
+  }
+
+  &[class*='right'] {
+    float: right;
+    max-width: 40%;
+    margin: 0 0 15px 20px;
+    @include medium-up {
+      margin: 0 0 20px 50px;
+    }
+  }
+
+  &[class*='center'] {
+    margin: 0 auto 15px auto;
+    @include medium-up {
+      margin: 0 auto 20px auto;
+    }
+  }
+}
+
+figure {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  @include medium-up {
+    max-width: 100%;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  img[class*='align'] {
+    margin: 0 auto;
+    float: none;
+    @include medium-up {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+
+  &[class*='left'] {
+    float: left;
+    max-width: 40%;
+    margin: 0 20px 15px 0;
+    @include medium-up {
+      margin: 0 50px 20px 0;
+    }
+  }
+
+  &[class*='right'] {
+    float: right;
+    max-width: 40%;
+    margin: 0 0 15px 20px;
+    @include medium-up {
+      margin: 0 0 20px 50px;
+    }
+  }
+
+  &[class*='center'] {
+    margin: 0 auto 15px auto;
+    @include medium-up {
+      margin: 0 auto 20px auto;
+    }
+  }
+
+  figcaption {
+    margin-top: 1px;
+    font-style: italic;
+    @include fontsize(15 18);
+    color: white;
+    background: black;
+    padding: 10px 25px;
+  }
+}
+
+// image list
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  @include medium-up {
+    flex-wrap: nowrap;
+    flex-grow: 0;
+    justify-content: space-between;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
+
+  .image {
+    width: 100%;
+    text-align: center;
+    @include medium-up {
+      display: flex;
+      align-content: stretch;
+      align-items: stretch;
+      width: 220px;
+      overflow: hidden;
+
+      img,
+      figure {
+        @include medium-up {
+          margin: 0;
+          object-fit: cover;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    @include medium-up {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(100% - 230px);
+      align-items: center;
+    }
+
+    > * {
+      width: 100%;
+    }
+  }
+}
+
+.zoom-img,
+.zoom-gal {
+  cursor: zoom-in;
+
+  img {
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
+  }
+}

@@ -1,0 +1,210 @@
+/*!
+* WS Starter
+* Designed by LRS Web Solutions (http://lrswebsolutions.com)
+* Visit http://lrswebsolutions.com
+*/
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  height: 0.0625rem !important;
+  margin: -1px !important;
+  margin: -0.0625rem !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  width: 0.0625rem !important;
+  white-space: nowrap !important; }
+  .sr-only:focus, .sr-only:active {
+    clip: auto !important;
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    height: auto !important;
+    margin: auto !important;
+    overflow: visible !important;
+    width: auto !important;
+    white-space: normal !important; }
+
+.offscreen {
+  position: absolute;
+  top: -9999em;
+  left: -9999em; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: initial; }
+
+.invisible {
+  visibility: hidden; }
+
+.clear {
+  display: block;
+  clear: both; }
+
+.clear-after:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+.float-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.text-left,
+.align-left {
+  text-align: left; }
+
+.text-right,
+.align-right {
+  text-align: right; }
+
+.text-center,
+.align-center {
+  text-align: center; }
+
+.text-justify,
+.align-justify {
+  text-align: justify; }
+
+@media (orientation: landscape) {
+  .show-landscape {
+    display: block; } }
+
+@media (orientation: portrait) {
+  .show-landscape {
+    display: none; } }
+
+@media (orientation: portrait) {
+  .show-portrait {
+    display: block; } }
+
+@media (orientation: landscape) {
+  .show-portrait {
+    display: none; } }
+
+@media (orientation: landscape) {
+  .hide-landscape {
+    display: none; } }
+
+@media (orientation: portrait) {
+  .hide-landscape {
+    display: block; } }
+
+@media (orientation: portrait) {
+  .hide-portrait {
+    display: none; } }
+
+@media (orientation: landscape) {
+  .hide-portrait {
+    display: block; } }
+
+@media (min-width: 640px) {
+  .show-small-only {
+    display: none; } }
+
+@media (min-width: 0) and (max-width: 640px) {
+  .show-medium-only {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .show-medium-only {
+    display: none; } }
+
+.show-large-only {
+  display: none; }
+  @media (min-width: 1024px) and (max-width: 1340px) {
+    .show-large-only {
+      display: block; } }
+  @media (min-width: 1341px) {
+    .show-large-only {
+      display: none; } }
+
+.show-xlarge-only {
+  display: none; }
+  @media (min-width: 1341px) and (max-width: 1399px) {
+    .show-xlarge-only {
+      display: block; } }
+  @media (min-width: 1400px) {
+    .show-xlarge-only {
+      display: none; } }
+
+.show-xxlarge-only {
+  display: none; }
+  @media (min-width: 1400px) {
+    .show-xxlarge-only {
+      display: none; } }
+
+.show-medium-up {
+  display: none; }
+  @media (min-width: 640px) {
+    .show-medium-up {
+      display: block; } }
+
+.show-large-up {
+  display: none; }
+  @media (min-width: 1024px) {
+    .show-large-up {
+      display: block; } }
+
+.show-xlarge-up {
+  display: none; }
+  @media (min-width: 1341px) {
+    .show-xlarge-up {
+      display: block; } }
+
+.show-xxlarge-up {
+  display: none; }
+  @media (min-width: 1400px) {
+    .show-xxlarge-up {
+      display: block; } }
+
+@media (min-width: 0) and (max-width: 640px) {
+  .hide-small-only {
+    display: none; } }
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hide-medium-only {
+    display: none; } }
+
+@media (min-width: 1024px) and (max-width: 1340px) {
+  .hide-large-only {
+    display: none; } }
+
+@media (min-width: 1341px) and (max-width: 1399px) {
+  .hide-xlarge-only {
+    display: none; } }
+
+@media (min-width: 1400px) {
+  .hide-xxlarge-only {
+    display: none; } }
+
+@media (min-width: 640px) {
+  .hide-medium-up {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .hide-large-up {
+    display: none; } }
+
+@media (min-width: 1341px) {
+  .hide-xlarge-up {
+    display: none; } }
+
+@media (min-width: 1400px) {
+  .hide-xxlarge-up {
+    display: none; } }
+
+/*# sourceMappingURL=homepage.css.map */

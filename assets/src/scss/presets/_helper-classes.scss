@@ -1,0 +1,254 @@
+// general
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+
+  &:focus,
+  &:active {
+    clip: auto !important;
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    height: auto !important;
+    margin: auto !important;
+    overflow: visible !important;
+    width: auto !important;
+    white-space: normal !important;
+  }
+}
+
+.offscreen {
+  @include offscreen;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clear {
+  display: block;
+  clear: both;
+}
+
+.clear-after:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+// floats
+.float-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+// alignment
+.text-left,
+.align-left {
+  text-align: left;
+}
+
+.text-right,
+.align-right {
+  text-align: right;
+}
+
+.text-center,
+.align-center {
+  text-align: center;
+}
+
+.text-justify,
+.align-justify {
+  text-align: justify;
+}
+
+// visiblity classes
+.show-landscape {
+  @include landscape {
+    display: block;
+  }
+  @include portrait {
+    display: none;
+  }
+}
+
+.show-portrait {
+  @include portrait {
+    display: block;
+  }
+  @include landscape {
+    display: none;
+  }
+}
+
+.hide-landscape {
+  @include landscape {
+    display: none;
+  }
+  @include portrait {
+    display: block;
+  }
+}
+
+.hide-portrait {
+  @include portrait {
+    display: none;
+  }
+  @include landscape {
+    display: block;
+  }
+}
+
+// show only
+.show-small-only {
+  @include medium-up {
+    display: none;
+  }
+}
+
+.show-medium-only {
+  @include small-only {
+    display: none;
+  }
+  @include large-up {
+    display: none;
+  }
+}
+
+.show-large-only {
+  display: none;
+  @include large-only {
+    display: block;
+  }
+  @include xlarge-up {
+    display: none;
+  }
+}
+
+.show-xlarge-only {
+  display: none;
+  @include xlarge-only {
+    display: block;
+  }
+  @include xxlarge-up {
+    display: none;
+  }
+}
+
+.show-xxlarge-only {
+  display: none;
+  @include xxlarge-up {
+    display: none;
+  }
+}
+
+// show up
+.show-medium-up {
+  display: none;
+  @include medium-up {
+    display: block;
+  }
+}
+
+.show-large-up {
+  display: none;
+  @include large-up {
+    display: block;
+  }
+}
+
+.show-xlarge-up {
+  display: none;
+  @include xlarge-up {
+    display: block;
+  }
+}
+
+.show-xxlarge-up {
+  display: none;
+  @include xxlarge-up {
+    display: block;
+  }
+}
+
+// hide only
+.hide-small-only {
+  @include small-only {
+    display: none;
+  }
+}
+
+.hide-medium-only {
+  @include medium-only {
+    display: none;
+  }
+}
+
+.hide-large-only {
+  @include large-only {
+    display: none;
+  }
+}
+
+.hide-xlarge-only {
+  @include xlarge-only {
+    display: none;
+  }
+}
+
+.hide-xxlarge-only {
+  @include xxlarge-up {
+    display: none;
+  }
+}
+
+// hide up
+.hide-medium-up {
+  @include medium-up {
+    display: none;
+  }
+}
+
+.hide-large-up {
+  @include large-up {
+    display: none;
+  }
+}
+
+.hide-xlarge-up {
+  @include xlarge-up {
+    display: none;
+  }
+}
+
+.hide-xxlarge-up {
+  @include xxlarge-up {
+    display: none;
+  }
+}

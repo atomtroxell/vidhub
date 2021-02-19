@@ -1,0 +1,80 @@
+table.responsive-table {
+  .cell-heading {
+    display: none;
+  }
+
+  tr.pagenation {
+    background: transparent;
+
+    > td {
+      padding: 0;
+    }
+
+    table {
+      margin: 0;
+    }
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      td {
+        display: inline-block;
+        // width: 1px;
+        // white-space: nowrap;
+      }
+    }
+  }
+}
+
+@include mq(0 $large) {
+  table.responsive-table {
+    width: 100%;
+
+    thead tr {
+      display: none;
+    }
+
+    td {
+      display: block;
+      clear: left;
+    }
+
+    .cell-heading {
+      display: block;
+    }
+
+    .cell-content {
+      display: block;
+    }
+
+    tr.pagenation {
+      background: transparent;
+
+      > td {
+        padding: 0;
+      }
+
+      table {
+        margin: 0;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody {
+        td {
+          // display: inline-block;
+          // width: 1px;
+          // white-space: nowrap;
+        }
+      }
+
+      .cell-heading {
+        display: none;
+      }
+    }
+  }
+}
