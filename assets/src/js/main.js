@@ -1,75 +1,52 @@
-jQuery(document).ready(function ($) {
-  // primary nav
-  $('.nav-primary').accessibleNav({
-    desktop: 1025,
-    spans: 'hide',
-    level2position: 'vertical-bottom',
-    level3position: 'horizontal-right'
-  });
-  $('.nav-open').on('keypress', function (e) {
-    if (e.which === 13) {
-      $('body').addClass('nav-wrap-open');
-      $('.nav-close').focus();
-    }
-  });
-  $('.nav-close').on('keypress', function (e) {
-    if (e.which === 13) {
-      $('body').removeClass('nav-wrap-open');
-      $('.nav-open').focus();
-    }
-  });
-  $('.nav-open').on('click', function () {
-    $('body').addClass('nav-wrap-open');
-  });
-  $('.nav-close').on('click', function () {
-    $('body').removeClass('nav-wrap-open');
-  });
+$(function () {
+  // jQuery(document).ready(function ($) {
+  //   setMargins();
+  //   $(window).on('resize', function () {
+  //     setMargins();
+  //   });
+  // });
 
-  // search
-  $('.search-form > button').click(function (e) {
-    e.preventDefault();
-    var root = location.protocol + '//' + location.host + '/search-results?search=';
-    var terms = $('.search-form input[type="search"]').val();
-    var url = root + terms;
-    // console.log(url);
-    window.location.href = url;
-  });
-  $('.search-form input[type="search"]').on('keyup', function (e) {
-    var root = location.protocol + '//' + location.host + '/search-results?search=';
-    var terms = $(this).val();
-    var url = root + terms;
-    // console.log(url);
-    if (e.which === 13) {
-      window.location.href = url;
-    }
-  });
-  $(".search-form input[type='search']").focusin(function () {
-    $('.search-form').addClass('active');
-  });
-  $(".search-form input[type='search']").focusout(function () {
-    $('.search-form').removeClass('active');
-  });
+  // function setMargins() {
+  //   width = $('.services a').width();
+  //   containerWidth = $('.services a span').width();
+  //   leftMargin = (width - containerWidth) / 2;
+  //   $('.services a span').css('marginLeft', leftMargin);
+  // }
+  // $(window).load(function () {
+  //   centerContent();
+  // });
 
-  // add class to select on open
-  $('select').on('click', function () {
-    $(this).toggleClass('open');
-  });
-  $('label').on('click', function (e) {
-    if ($(this).next().is('select')) {
-      e.preventDefault();
-      $(this).next('select').focus();
-    }
-  });
-  $(document).on('keyup', function (e) {
-    if (e.keyCode === 27) {
-      if ($('select').hasClass('open')) {
-        $(this).removeClass('open');
-      }
-    }
-  });
-  $(window).on('scroll', function () {
-    if ($('select').hasClass('open')) {
-      $('select').removeClass('open');
-    }
-  });
+  // $(window).resize(function () {
+  //   centerContent();
+  // });
+
+  // function centerContent() {
+  //   var container = $('.services a');
+  //   var content = $('.services a span');
+  //   $('.services a span').css("left", (container.width() - content.width()) / 2);
+  //   $('.services a span').css("top", (container.height() - content.height()) / 2);
+  // }
+  // $('.services a').each(function () {
+  //   var title = $(this).attr('aria-label');
+  // });
+
+  // video modal
+  // $('.services a').on('click', function (event) {
+  //   event.preventDefault();
+  //   // alert('clicked');
+  //   var serviceTitle = $(this).attr('aria-label');
+  //   // console.log(serviceTitle);
+  //   var serviceURL = $(this).attr('data-src');
+  //   // console.log(serviceURL);
+  //   $('.modal').attr('aria-label', serviceTitle);
+  //   $('.modal h1').text(serviceTitle);
+  //   $('.modal iframe').attr('src', serviceURL).attr('title', serviceTitle);
+  // });
+  // $('.modal .close-modal').on('click', function () {
+  //   $('.modal iframe').attr('src', '');
+  // });
+  // $('body').on('click', function () {
+  //   console.log('clicked');
+  // });
+  // $(".whatever").load("https://www.disneyplus.com/home");
 });

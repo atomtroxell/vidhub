@@ -17,9 +17,11 @@ body {
   -webkit-overflow-scrolling: touch;
   height: 100%;
   font-size: 100%;
-  background: white;
+  // background: white;
+  background: black;
   font-family: sans-serif;
   margin: 0;
+  overflow: hidden;
 }
 
 .clearfix:after {
@@ -41,6 +43,10 @@ a {
     text-decoration: underline;
     color: purple;
   }
+}
+
+iframe {
+  border: 0;
 }
 
 input {

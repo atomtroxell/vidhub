@@ -1421,4 +1421,20 @@ figure {
     .image-list .content > * {
       width: 100%; }
 
+.zoom-img,
+.zoom-gal {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in; }
+  .zoom-img img,
+  .zoom-gal img {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .zoom-img img:hover, .zoom-img img:focus,
+    .zoom-gal img:hover,
+    .zoom-gal img:focus {
+      -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+              transform: scale(1.02); }
+
 /*# sourceMappingURL=rte.css.map */
