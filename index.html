@@ -14,11 +14,15 @@
   <script src="https://kit.fontawesome.com/484dcbbb7f.js" crossorigin="anonymous"></script>
 
   <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/dist/images/icons/apple-touch-icon-144-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/dist/images/icons/apple-touch-icon-114-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/dist/images/icons/apple-touch-icon-72-precomposed.png" />
-  <link rel="apple-touch-icon" href="assets/dist/images/icons/apple-touch-icon-57-precomposed.png" />
-  <link rel="shortcut icon" href="assets/dist/images/icons/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aeef">
+  <meta name="apple-mobile-web-app-title" content="VidHUB">
+  <meta name="application-name" content="VidHUB">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 
   <!--[if lt IE 9]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
@@ -32,48 +36,30 @@
 				<p>You are using an unsupported browser. Some web functions may not work correctly. <span><a href="http://browsehappy.com/" target="_blank">Please update your browser for the best user experience</a></span></p>
 			</div>
     <![endif]-->
+  <div class="last-viewed">Continue watching </div>
   <div class="services-container" style="background-image: url(/assets/dist/images/bg-01.jpg)">
-    <div class="services">
-      <div><a class="prime" href="https://www.amazon.com/Prime-Video/b?node=2676882011" aria-label="Amazon Prime Video">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="disney" href="https://www.disneyplus.com/home" aria-label="Disney+">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="hulu" href="https://www.hulu.com/hub/home" aria-label="Hulu">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="hbo" href="https://www.hbomax.com/" aria-label="HBO Max">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="imdb" href="https://www.imdb.com/tv/" aria-label="IMDb TV">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="netflix" href="https://www.netflix.com/browse" aria-label="Netflix">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="peacock" href="https://www.netflix.com/browse" aria-label="Peacock">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="pluto" href="https://pluto.tv/live-tv/tv-land-sitcoms?utm_source=homepage" aria-label="Pluto">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="roku" href="https://therokuchannel.roku.com/" aria-label="Roku">
-          <span class="logo"></span>
-        </a></div>
-      <div><a class="vudu" href="https://www.vudu.com/" aria-label="Vudu">
-          <span class="logo"></span>
-        </a></div>
-    </div>
-    <iframe src="" title="" allowfullscreen="true"></iframe>
-    <div class="modal" id="videoModal" aria-label="" aria-hidden="true">
+    <div class="services"></div>
+    <div class="modal" id="settingsModal" aria-label="Settings" aria-hidden="true">
       <div class="modal-content">
-        <h1 class="sr-only"></h1>
-        <iframe src="" title="" allowfullscreen="true"></iframe>
-        <span class="close-modal" aria-label="Close Modal">Exit <i class="fas fa-window-close"></i></span>
+        <h1>Settings</h1>
+        <h2>Services</h2>
+        <div class="content-form services-list"></div>
+        <h2>Most Recent</h2>
+        <div class="content-form">
+          <div class="sm-full sm-last switch">
+            <span class="label">Show recently viewed?</span>
+            <input type="checkbox" id="rememberRecent" name="rememberRecent" aria-labelledby="rememberRecentLabel"></input>
+            <label id="rememberRecentLabel" for="rememberRecent">Show recently viewed?</label>
+          </div>
+        </div>
+        <button class="btn-primary" id="save">Save Settings</button>
+        <button class="btn-secondary" id="clear">Clear Settings</button>
       </div>
+      <span class="close-modal" aria-label="Close Modal"><i class="fas fa-window-close"></i></span>
     </div>
   </div>
+
+  <a class="open-modal modal-inline settings-link" href="#settingsModal" aria-label="Open Settings"><i class="fas fa-cogs"></i></a>
 
   <!-- Vendor JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

@@ -23,7 +23,7 @@
 // @import 'vendor/article-columns';
 // article grid
 // @import 'vendor/article-grid';
-// @import 'vendor/forms';
+@import 'vendor/forms';
 @import 'vendor/modal';
 // @import 'vendor/magnific-popup';
 @import 'vendor/responsive-videos';
@@ -34,6 +34,7 @@
 // @import 'vendor/speedbump';
 // @import 'vendor/cta';
 @import 'vendor/images';
+@import 'vendor/fontawesome';
 
 // Layout
 // @import 'layout/header';
@@ -45,7 +46,7 @@
 // @import 'components/accordions';
 // @import 'components/branding';
 // @import 'components/columns';
-// @import 'components/forms';
+@import 'components/forms';
 @import 'components/general';
 @import 'components/iebar';
 // @import 'components/nav-primary';
@@ -54,6 +55,7 @@
 // @import 'components/typography';
 @import 'components/services';
 @import 'components/modal';
+@import 'components/settings';
 
 // Modules
 // @import 'modules/blog';

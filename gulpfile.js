@@ -51,8 +51,8 @@ var paths = {
     dest: 'assets/dist/images/',
   },
   fonts: {
-    src: 'assets/src/fonts/',
-    dest: 'assets/dist/fonts/'
+    src: 'assets/src/webfonts/',
+    dest: 'assets/dist/webfonts/'
   }
 };
 

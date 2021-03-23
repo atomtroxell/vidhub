@@ -1,0 +1,122 @@
+.content-form {
+  input[type='checkbox'] {
+    margin-bottom: 5px;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    background: black;
+    border-radius: 3px;
+
+    &:checked {
+      background: black;
+
+      &:before {
+        top: -5px;
+        left: 2px;
+        color: #f05931;
+      }
+    }
+
+    + label {
+      margin-bottom: 5px;
+    }
+  }
+
+  .label {
+    margin-bottom: 5px;
+  }
+
+  .switch {
+    input[type=checkbox] {
+      position: absolute;
+      left: -9999em;
+      padding: 0;
+      height: 0;
+      width: 0;
+      visibility: hidden;
+
+      + label {
+        cursor: pointer;
+        display: block;
+        margin-left: 1px;
+        margin-bottom: 5px;
+        width: 40px;
+        height: 20px;
+        text-indent: -9999px;
+        background: black;
+        border: 1px solid white;
+        border-radius: 3px;
+        position: relative;
+      }
+    }
+
+    label:after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      background: #f05931;
+      // border: 1px solid white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    input:checked + label {
+      // background: #98f031;
+    }
+
+    input:checked + label:after {
+      left: calc(100% - 2px);
+      transform: translateX(-100%);
+    }
+
+    label:active:after {
+      width: 16px;
+    }
+
+    // centering
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  }
+}
+
+.btn-primary {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 8px 12px;
+  color: black;
+  font-weight: 600;
+  background: #f05931;
+  border: 0;
+  border-radius: 3px;
+  transition: background ease-in-out 0.2s;
+
+  &:hover,
+  &:focus {
+    background: #31b3f0;
+  }
+}
+
+.btn-secondary {
+  float: right;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 8px 12px;
+  color: black;
+  font-weight: 600;
+  background: #31b3f0;
+  border: 0;
+  border-radius: 3px;
+  transition: background ease-in-out 0.2s;
+
+  &:hover,
+  &:focus {
+    background: #f05931;
+  }
+}

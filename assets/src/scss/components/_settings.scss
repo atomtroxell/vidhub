@@ -1,0 +1,28 @@
+.settings-link {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: white;
+  opacity: 0.35;
+  transition: opacity ease-in-out 0.15s;
+
+  &:visited {
+    color: white;
+    opacity: 0.35;
+    transition: opacity ease-in-out 0.15s;
+  }
+
+  &:active {
+    color: white;
+    opacity: 0.8;
+    transition: opacity ease-in-out 0.15s;
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+    opacity: 0.8;
+    transition: opacity ease-in-out 0.15s;
+  }
+}

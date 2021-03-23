@@ -1,3 +1,44 @@
+.last-viewed {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  @include fontsize(16 18);
+  text-align: center;
+  color: white;
+  background: rgba(white, 0.25);
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 0;
+  animation: fadein ease 1s;
+  animation-fill-mode: forwards;
+  @include large-up {
+    top: 20px;
+  }
+
+  a {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover,
+    &:focus {
+      color: #f05931;
+      text-decoration: none;
+    }
+  }
+}
+
 .services-container {
   background-position: center center;
   background-size: cover;
@@ -13,11 +54,11 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   max-width: 1400px;
   height: 100vh;
   @include medium-up {
-    padding: 40px;
+    // padding: 0 40px 40px;
   }
   @include large-up {
     padding: 80px;
@@ -32,7 +73,7 @@
     box-shadow: 0px 0px 10px 0px rgba(black, 0.1);
     animation: fadein ease 2s 2.5s;
     animation-fill-mode: forwards;
-    opacity: 0.0;
+    opacity: 0;
     overflow: hidden;
     transition: transform .2s;
     @include medium-up {
@@ -41,48 +82,32 @@
 
     &:hover,
     &:focus {
-      // a {
-      // animation: zoom 0.2s ease;
       border-color: rgba(white, 0.5);
       box-shadow: 0px 0px 20px 0px rgba(black, 0.2);
       transform: scale(1.1);
-      // }
 
       .title {
         background: black;
       }
-
-      .logo {
-        // animation: gradient 1s ease infinite;
-      }
     }
   }
 
-  a {
-    // position: relative;
-    // width: calc(100% / 3 - 40px);
-    // height: calc(100vh / 6);
-    // border: 5px solid rgba(white, 0.2);
+  .service {
+    cursor: pointer;
     display: block;
     width: 100%;
     height: 100%;
 
     .logo {
-      // position: absolute;
-      // top: 6px;
-      // left: 6px;
-      // padding: 50px;
-      // width: calc(100% - 12px);
-      // height: calc(100% - 12px);
       display: block;
       width: 100%;
       height: 100%;
-      // background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)) 0% 0%;
-      // border-radius: 21px;
+      background-position: center center;
+      background-size: 50% auto;
+      background-repeat: no-repeat;
     }
 
     .title {
-      // display: none;
       position: absolute;
       top: calc(100% + 5px);
       left: 50%;
@@ -94,89 +119,89 @@
       color: white;
       background: rgba(black, 0.45);
       border-radius: 12px;
-      opacity: 0.0;
+      opacity: 0;
       animation: fadein ease 1s 3s;
       animation-fill-mode: forwards;
     }
   }
 
-  .prime {
-    background: linear-gradient(to right, #2d78b4 0%, #3ea1d5 100%);
+  // .prime {
+  //   background: linear-gradient(to right, #2d78b4 0%, #3ea1d5 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/amazon.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/amazon.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .disney {
-    background: linear-gradient(to bottom, #08072a 0%, #22479f 100%);
+  // .disney {
+  //   background: linear-gradient(to bottom, #08072a 0%, #22479f 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/disney.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/disney.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .hulu {
-    background: linear-gradient(to bottom, #44b5a3 0%, #3fac4d 100%);
+  // .hulu {
+  //   background: linear-gradient(to bottom, #44b5a3 0%, #3fac4d 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/hulu.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/hulu.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .hbo {
-    background: linear-gradient(80deg, #9a35ef 0%, #bc11ad 100%);
+  // .hbo {
+  //   background: linear-gradient(80deg, #9a35ef 0%, #bc11ad 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/hbo.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/hbo.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .imdb {
-    background: linear-gradient(to right, #d01f48 0%, #e8138b 100%);
+  // .imdb {
+  //   background: linear-gradient(to right, #d01f48 0%, #e8138b 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/imdbtv.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/imdbtv.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .netflix {
-    background: linear-gradient(to bottom, #910118 0%, #c60c20 100%);
+  // .netflix {
+  //   background: linear-gradient(to bottom, #910118 0%, #c60c20 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/netflix.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/netflix.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .peacock {
-    background: linear-gradient(to bottom, #222021 0%, #090808 100%);
+  // .peacock {
+  //   background: linear-gradient(to bottom, #222021 0%, #090808 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/peacock.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/peacock.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .pluto {
-    background: linear-gradient(to bottom, #222021 0%, #000000 100%);
+  // .pluto {
+  //   background: linear-gradient(to bottom, #222021 0%, #000000 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/pluto.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/pluto.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .roku {
-    background: linear-gradient(to right, #660553 0%, #1617c7 100%);
+  // .roku {
+  //   background: linear-gradient(to right, #660553 0%, #1617c7 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/roku.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/roku.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 
-  .vudu {
-    background: linear-gradient(to right, #24619d 0%, #317fd5 100%);
+  // .vudu {
+  //   background: linear-gradient(to right, #24619d 0%, #317fd5 100%);
 
-    .logo {
-      background: url('/assets/dist/images/logos/vudu.svg') center center / 50% auto no-repeat;
-    }
-  }
+  //   .logo {
+  //     background: url('/assets/dist/images/logos/vudu.svg') center center / 50% auto no-repeat;
+  //   }
+  // }
 }

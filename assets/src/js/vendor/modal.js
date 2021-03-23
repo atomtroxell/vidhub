@@ -78,13 +78,13 @@ jQuery(document).ready(function ($) {
 					'min-height': 'calc(' + modalHeight + 'px - 40px)'
 				})
 			}
-			if ($(modalURL).hasClass('modal-inline')) {
+			if ($(modalLink).hasClass('modal-inline')) {
 				$(modalURL).parent().addClass('modal-inline-parent');
 				$('html, body').toggleClass('modal-open');
-				$('.modal-overlay').toggleClass('show-modal modal-inline');
+				$('.modal-overlay').insertAfter(modalURL).toggleClass('show-modal modal-inline');
 				$(modalURL).toggleClass('show-modal');
 				$(modalURL).removeAttr('hidden').attr('aria-hidden', 'false').attr('tabindex', '0');
-				$('.modal-content .close-modal').addClass('modal-inline').attr('tabindex', '0');
+				$('.close-modal', modalURL).addClass('modal-inline').attr('tabindex', '0');
 				$(modalURL).focus();
 				modalFocus = $(modalURL + ' > .modal-content');
 				focusable(modalFocus);
@@ -139,7 +139,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	// close when clicking overlay / outside of modal window
-	$('.modal-overlay').click(function () {
+	$('.modal-overlay').on('click', function () {
 		$('html, body').removeClass('modal-open');
 		$(this).removeClass('show-modal');
 		if (!$(this).hasClass('modal-inline')) {
@@ -148,18 +148,20 @@ jQuery(document).ready(function ($) {
 			$(modalURL).attr('hidden', 'hidden').attr('aria-hidden', 'true').attr('tabindex', '-1');
 			$('.modal').removeClass('show-modal');
 		} else {
+			// modalCopy.remove();
 			$(modalURL).parent().removeClass('modal-inline-parent');
 			$(modalURL).removeClass('show-modal');
 			$(modalURL).attr('hidden', 'hidden').attr('aria-hidden', 'true').attr('tabindex', '-1');
 		}
 		if (modalLink !== undefined) {
+			// modalCopy.remove();
 			modalLink.focus();
 			modalLink = undefined;
 		}
 	});
 
 	// dont close modal if clicking anything but close button
-	$('.modal-content *:not(.close-modal)').click(function (e) {
+	$('.modal-content *:not(.close-modal)').on('click', function (e) {
 		e.stopPropagation();
 	});
 
@@ -179,6 +181,7 @@ jQuery(document).ready(function ($) {
 
 		}
 		if (modalLink != undefined) {
+			// modalCopy.remove();
 			modalLink.focus();
 			modalLink = undefined;
 		}
