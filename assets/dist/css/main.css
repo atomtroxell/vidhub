@@ -6591,8 +6591,8 @@ input {
   left: 0;
   right: 0;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-top: 0.625rem;
+  padding-top: 11px;
+  padding-top: 0.6875rem;
   width: 100%;
   max-width: 500px;
   max-width: 31.25rem;
@@ -6603,6 +6603,8 @@ input {
   font-size: 1rem;
   line-height: 1.125rem;
   letter-spacing: normal;
+  color: white;
+  text-decoration: none;
   text-align: center;
   color: white;
   background: rgba(255, 255, 255, 0.25);
@@ -6613,20 +6615,19 @@ input {
   -webkit-animation: fadein ease 1s;
           animation: fadein ease 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+          animation-fill-mode: forwards;
+  -webkit-transition: color ease-in-out 0.2s;
+  -o-transition: color ease-in-out 0.2s;
+  transition: color ease-in-out 0.2s; }
   @media (min-width: 1024px) {
     .last-viewed {
       top: 20px;
       top: 1.25rem; } }
-  .last-viewed a {
-    font-weight: 600;
-    color: white;
+  .last-viewed:visited {
+    color: white; }
+  .last-viewed:hover, .last-viewed:focus {
+    color: #f05931;
     text-decoration: none; }
-    .last-viewed a:visited {
-      color: white; }
-    .last-viewed a:hover, .last-viewed a:focus {
-      color: #f05931;
-      text-decoration: none; }
 
 .services-container {
   background-position: center center;
