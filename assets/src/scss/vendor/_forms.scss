@@ -343,331 +343,331 @@
     }
   }
 
-  [class*="sm-"] + [class*="sm-"] > input[type='submit'],
-  [class*="sm-"] + [class*="sm-"] > input[type='submit'],
-  [class*="sm-"] + [class*="sm-"] > input[type='submit'],
-  [class*="sm-"] + [class*="sm-"] > input[type='submit'],
-  [class*="sm-"] + [class*="sm-"] > input[type='submit'] {
-    margin-left: 0;
-  }
+  // [class*="sm-"] + [class*="sm-"] > input[type='submit'],
+  // [class*="sm-"] + [class*="sm-"] > input[type='submit'],
+  // [class*="sm-"] + [class*="sm-"] > input[type='submit'],
+  // [class*="sm-"] + [class*="sm-"] > input[type='submit'],
+  // [class*="sm-"] + [class*="sm-"] > input[type='submit'] {
+  //   margin-left: 0;
+  // }
 
-  [class*="sm-"] > p,
-  [class*="md-"] > p,
-  [class*="lg-"] > p,
-  [class*="xlg-"] > p,
-  [class*="xxlg-"] > p {
-    padding: 0;
-  }
+  // [class*="sm-"] > p,
+  // [class*="md-"] > p,
+  // [class*="lg-"] > p,
+  // [class*="xlg-"] > p,
+  // [class*="xxlg-"] > p {
+  //   padding: 0;
+  // }
 
-  /* recaptcha */
-  .g-recaptcha {
-    margin: 0 0 30px 0;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
+  // /* recaptcha */
+  // .g-recaptcha {
+  //   margin: 0 0 30px 0;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
 
-  /* small screens */
-  .sm-last + div {
-    clear: both;
-  }
+  // /* small screens */
+  // .sm-last + div {
+  //   clear: both;
+  // }
 
-  .sm-full {
-    clear: both;
-    width: 100%;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
+  // .sm-full {
+  //   clear: both;
+  //   width: 100%;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
 
-  .sm-half {
-    float: left;
-    clear: none;
-    width: 50%;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
+  // .sm-half {
+  //   float: left;
+  //   clear: none;
+  //   width: 50%;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
 
-  .sm-third {
-    float: left;
-    clear: none;
-    width: 33.333%;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
+  // .sm-third {
+  //   float: left;
+  //   clear: none;
+  //   width: 33.333%;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
 
-  .sm-two-thirds {
-    float: left;
-    clear: none;
-    width: 66.666%;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
+  // .sm-two-thirds {
+  //   float: left;
+  //   clear: none;
+  //   width: 66.666%;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
 
-  .sm-quarter {
-    float: left;
-    clear: none;
-    width: 25%;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
+  // .sm-quarter {
+  //   float: left;
+  //   clear: none;
+  //   width: 25%;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
 
-  .sm-three-quarters {
-    float: left;
-    clear: none;
-    width: 75%;
-    padding-right: $gutter / 2;
-    padding-left: $gutter / 2;
-  }
-  /* medium screens */
-  @media screen and (min-width: $medium) {
-    [class*='md-'] {
-      clear: none;
-      width: auto;
-    }
+  // .sm-three-quarters {
+  //   float: left;
+  //   clear: none;
+  //   width: 75%;
+  //   padding-right: $gutter / 2;
+  //   padding-left: $gutter / 2;
+  // }
+  // /* medium screens */
+  // @media screen and (min-width: $medium) {
+  //   [class*='md-'] {
+  //     clear: none;
+  //     width: auto;
+  //   }
 
-    [class~='sm-last'] + div[class*='md-'] {
-      clear: none;
-    }
+  //   [class~='sm-last'] + div[class*='md-'] {
+  //     clear: none;
+  //   }
 
-    [class~='md-last'] + div[class*='sm-'] {
-      clear: both;
-    }
+  //   [class~='md-last'] + div[class*='sm-'] {
+  //     clear: both;
+  //   }
 
-    .md-full {
-      clear: none;
-      width: 100%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .md-full {
+  //     clear: none;
+  //     width: 100%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .md-half {
-      float: left;
-      clear: none;
-      width: calc(100% / 2);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .md-half {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 2);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .md-third {
-      float: left;
-      clear: none;
-      width: calc(100% / 3);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .md-third {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 3);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .md-two-thirds {
-      float: left;
-      clear: none;
-      width: calc(100% / 3 * 2);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .md-two-thirds {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 3 * 2);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .md-quarter {
-      float: left;
-      clear: none;
-      width: calc(100% / 4);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .md-quarter {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 4);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .md-three-quarters {
-      float: left;
-      clear: none;
-      width: calc(100% / 4 * 3);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
-  }
-  /* large screens */
-  @media screen and (min-width: $large) {
-    [class*='lg-'] {
-      clear: none;
-      width: auto;
-    }
+  //   .md-three-quarters {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 4 * 3);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
+  // }
+  // /* large screens */
+  // @media screen and (min-width: $large) {
+  //   [class*='lg-'] {
+  //     clear: none;
+  //     width: auto;
+  //   }
 
-    // [class*='lg-last'] + div {
-    //   clear: both;
-    // }
-    [class~='sm-last'] + div[class*='lg-'],
-    [class~='md-last'] + div[class*='lg-'] {
-      clear: none;
-    }
+  //   // [class*='lg-last'] + div {
+  //   //   clear: both;
+  //   // }
+  //   [class~='sm-last'] + div[class*='lg-'],
+  //   [class~='md-last'] + div[class*='lg-'] {
+  //     clear: none;
+  //   }
 
-    [class~='lg-last'] + div[class*='sm-'],
-    [class~='lg-last'] + div[class*='md-'] {
-      clear: both;
-    }
+  //   [class~='lg-last'] + div[class*='sm-'],
+  //   [class~='lg-last'] + div[class*='md-'] {
+  //     clear: both;
+  //   }
 
-    .lg-full {
-      float: left;
-      clear: none;
-      width: 100%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .lg-full {
+  //     float: left;
+  //     clear: none;
+  //     width: 100%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .lg-half {
-      float: left;
-      clear: none;
-      width: 50%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .lg-half {
+  //     float: left;
+  //     clear: none;
+  //     width: 50%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .lg-third {
-      float: left;
-      clear: none;
-      width: 33.333%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .lg-third {
+  //     float: left;
+  //     clear: none;
+  //     width: 33.333%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .lg-two-thirds {
-      float: left;
-      clear: none;
-      width: 66.666%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .lg-two-thirds {
+  //     float: left;
+  //     clear: none;
+  //     width: 66.666%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .lg-quarter {
-      float: left;
-      clear: none;
-      width: 25%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .lg-quarter {
+  //     float: left;
+  //     clear: none;
+  //     width: 25%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .lg-three-quarters {
-      clear: none;
-      width: 75%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
-  }
+  //   .lg-three-quarters {
+  //     clear: none;
+  //     width: 75%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
+  // }
 
-  @media screen and (min-width: $xlarge) {
-    [class*='xlg-'] {
-      clear: none;
-      width: auto;
-    }
+  // @media screen and (min-width: $xlarge) {
+  //   [class*='xlg-'] {
+  //     clear: none;
+  //     width: auto;
+  //   }
 
-    [class~='sm-last'] + div[class*='xlg-'],
-    [class~='md-last'] + div[class*='xlg-'],
-    [class~='lg-last'] + div[class*='xlg-'] {
-      clear: none;
-    }
+  //   [class~='sm-last'] + div[class*='xlg-'],
+  //   [class~='md-last'] + div[class*='xlg-'],
+  //   [class~='lg-last'] + div[class*='xlg-'] {
+  //     clear: none;
+  //   }
 
-    [class~='xlg-last'] + div[class*='sm-'],
-    [class~='xlg-last'] + div[class*='md-'],
-    [class~='xlg-last'] + div[class*='lg-'] {
-      clear: both;
-    }
+  //   [class~='xlg-last'] + div[class*='sm-'],
+  //   [class~='xlg-last'] + div[class*='md-'],
+  //   [class~='xlg-last'] + div[class*='lg-'] {
+  //     clear: both;
+  //   }
 
-    .xlg-full {
-      float: left;
-      clear: none;
-      width: 100%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xlg-full {
+  //     float: left;
+  //     clear: none;
+  //     width: 100%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xlg-half {
-      float: left;
-      clear: none;
-      width: calc(100% / 2);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xlg-half {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 2);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xlg-third {
-      float: left;
-      clear: none;
-      width: calc(100% / 3);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xlg-third {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 3);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xlg-two-thirds {
-      float: left;
-      clear: none;
-      width: calc(100% / 3 * 2);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xlg-two-thirds {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 3 * 2);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xlg-quarter {
-      float: left;
-      clear: none;
-      width: calc(100% / 4);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xlg-quarter {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 4);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xlg-three-quarters {
-      clear: none;
-      width: calc(100% / 4 * 3);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
-  }
+  //   .xlg-three-quarters {
+  //     clear: none;
+  //     width: calc(100% / 4 * 3);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
+  // }
 
-  @media screen and (min-width: $xxlarge) {
-    [class*='xxlg-'] {
-      clear: none;
-      width: auto;
-    }
+  // @media screen and (min-width: $xxlarge) {
+  //   [class*='xxlg-'] {
+  //     clear: none;
+  //     width: auto;
+  //   }
 
-    [class*='xxlg-last'] + div {
-      clear: both;
-    }
+  //   [class*='xxlg-last'] + div {
+  //     clear: both;
+  //   }
 
-    .xxlg-full {
-      float: left;
-      clear: none;
-      width: 100%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xxlg-full {
+  //     float: left;
+  //     clear: none;
+  //     width: 100%;
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xxlg-half {
-      float: left;
-      clear: none;
-      width: calc(100% / 2);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xxlg-half {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 2);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xxlg-third {
-      float: left;
-      clear: none;
-      width: calc(100% / 3);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xxlg-third {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 3);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xxlg-two-thirds {
-      float: left;
-      clear: none;
-      width: calc(100% / 3 * 2);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xxlg-two-thirds {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 3 * 2);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xxlg-quarter {
-      float: left;
-      clear: none;
-      width: calc(100% / 4);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
+  //   .xxlg-quarter {
+  //     float: left;
+  //     clear: none;
+  //     width: calc(100% / 4);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
 
-    .xxlg-three-quarters {
-      clear: none;
-      width: calc(100% / 4 * 3);
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
-  }
+  //   .xxlg-three-quarters {
+  //     clear: none;
+  //     width: calc(100% / 4 * 3);
+  //     padding-right: $gutter / 2;
+  //     padding-left: $gutter / 2;
+  //   }
+  // }
 }

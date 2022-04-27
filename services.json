@@ -3,78 +3,141 @@
     "id": "amazon",
     "title": "Amazon Prime Video",
     "logo": "/assets/dist/images/logos/amazon.svg",
-    "url": "https://www.amazon.com/Prime-Video/b?node=2676882011",
-    "background": "background: -webkit-gradient(linear, left top, right top, from(#2d78b4), to(#3ea1d5));background: -o-linear-gradient(left, #2d78b4 0%, #3ea1d5 100%);background: linear-gradient(to right, #2d78b4 0%, #3ea1d5 100%);"
+    "url": "https://www.amazon.com/Amazon-Video/b?node=2676882011",
+    "background": "background: linear-gradient(to right, #2d78b4 0%, #3ea1d5 100%);"
+  },
+  {
+    "id": "amcplus",
+    "title": "AMC+",
+    "logo": "/assets/dist/images/logos/amcplus.svg",
+    "url": "https://www.amcplus.com/login?redirect=https%3A%2F%2Fwww.amcplus.com%2Fforyou",
+    "background": "background: linear-gradient(to right, #0b1523 0%,#0c3842 100%);"
+  },
+  {
+    "id": "crackle",
+    "title": "Crackle",
+    "logo": "/assets/dist/images/logos/crackle.svg",
+    "url": "https://www.crackle.com/",
+    "background": "background: linear-gradient(to right, #ff5c18 0%,#ff8f13 25%,#ff5a17 50%,#ff8f13 75%,#ff5a17 100%);"
+  },
+  {
+    "id": "crunchyroll",
+    "title": "Crunchyroll",
+    "logo": "/assets/dist/images/logos/crunchyroll.svg",
+    "url": "https://www.crunchyroll.com/",
+    "background": "background: white;"
+  },
+  {
+    "id": "directtvstream",
+    "title": "DirectTV Stream",
+    "logo": "/assets/dist/images/logos/directtvstream.svg",
+    "url": "https://www.directv.com/stream/",
+    "background": "background: black;"
+  },
+  {
+    "id": "discoveryplus",
+    "title": "Discovery+",
+    "logo": "/assets/dist/images/logos/discoveryplus.svg",
+    "url": "https://www.discoveryplus.com/",
+    "background": "background: #dde9f9;"
   },
   {
     "id": "disney",
     "title": "Disney+",
     "logo": "/assets/dist/images/logos/disney.svg",
     "url": "https://www.disneyplus.com/home",
-    "background": "background: -webkit-gradient(linear, left top, left bottom, from(#08072a), to(#22479f));background: -o-linear-gradient(top, #08072a 0%, #22479f 100%);background: linear-gradient(to bottom, #08072a 0%, #22479f 100%);"
+    "background": "background: linear-gradient(to bottom, #08072a 0%, #22479f 100%);"
   },
   {
     "id": "hulu",
     "title": "Hulu",
     "logo": "/assets/dist/images/logos/hulu.svg",
     "url": "https://www.hulu.com/hub/home",
-    "background": "background: -webkit-gradient(linear, left top, left bottom, from(#44b5a3), to(#3fac4d));background: -o-linear-gradient(top, #44b5a3 0%, #3fac4d 100%);background: linear-gradient(to bottom, #44b5a3 0%, #3fac4d 100%);"
+    "background": "background: linear-gradient(to bottom, #44b5a3 0%, #3fac4d 100%);"
   },
   {
     "id": "hbo",
     "title": "HBO Max",
     "logo": "/assets/dist/images/logos/hbo.svg",
     "url": "https://www.hbomax.com/",
-    "background": "background: -o-linear-gradient(10deg, #9a35ef 0%, #bc11ad 100%);background: linear-gradient(80deg, #9a35ef 0%, #bc11ad 100%);"
+    "background": "background: linear-gradient(80deg, #9a35ef 0%, #bc11ad 100%);"
   },
   {
     "id": "imdb",
     "title": "IMDb TV",
     "logo": "/assets/dist/images/logos/imdb.svg",
     "url": "https://www.netflix.com/browse",
-    "background": "background: -webkit-gradient(linear, left top, right top, from(#d01f48), to(#e8138b));background: -o-linear-gradient(left, #d01f48 0%, #e8138b 100%);background: linear-gradient(to right, #d01f48 0%, #e8138b 100%);"
+    "background": "background: linear-gradient(to right, #d01f48 0%, #e8138b 100%);"
   },
   {
     "id": "netflix",
     "title": "Netflix",
     "logo": "/assets/dist/images/logos/netflix.svg",
     "url": "https://www.netflix.com",
-    "background": "background: -webkit-gradient(linear, left top, left bottom, from(#910118), to(#c60c20));background: -o-linear-gradient(top, #910118 0%, #c60c20 100%);background: linear-gradient(to bottom, #910118 0%, #c60c20 100%);"
+    "background": "background: linear-gradient(to bottom, #910118 0%, #c60c20 100%);"
   },
   {
     "id": "peacock",
     "title": "Peacock",
     "logo": "/assets/dist/images/logos/peacock.svg",
     "url": "https://www.peacocktv.com/",
-    "background": "background: -webkit-gradient(linear, left top, left bottom, from(#222021), to(#090808));background: -o-linear-gradient(top, #222021 0%, #090808 100%);background: linear-gradient(to bottom, #222021 0%, #090808 100%);"
+    "background": "background: linear-gradient(to bottom, #222021 0%, #090808 100%);"
   },
   {
     "id": "pluto",
     "title": "Pluto TV",
     "logo": "/assets/dist/images/logos/pluto.svg",
     "url": "https://pluto.tv/live-tv/tv-land-sitcoms?utm_source=homepage",
-    "background": "background: -webkit-gradient(linear, left top, left bottom, from(#222021), to(#000000));background: -o-linear-gradient(top, #222021 0%, #000000 100%);background: linear-gradient(to bottom, #222021 0%, #000000 100%);"
+    "background": "background: linear-gradient(to bottom, #222021 0%, #000000 100%);"
   },
   {
     "id": "roku",
     "title": "The Roku Channel",
     "logo": "/assets/dist/images/logos/roku.svg",
     "url": "https://therokuchannel.roku.com/",
-    "background": "background: -webkit-gradient(linear, left top, right top, from(#660553), to(#1617c7));background: -o-linear-gradient(left, #660553 0%, #1617c7 100%);background: linear-gradient(to right, #660553 0%, #1617c7 100%);"
+    "background": "background: linear-gradient(to right, #660553 0%, #1617c7 100%);"
+  },
+  {
+    "id": "showtime",
+    "title": "Showtime",
+    "logo": "/assets/dist/images/logos/showtime.svg",
+    "url": "https://www.showtime.com/login",
+    "background": "background: linear-gradient(to right, #181717 0%,#650808 100%);"
+  },
+  {
+    "id": "starz",
+    "title": "Starz",
+    "logo": "/assets/dist/images/logos/starz.svg",
+    "url": "https://www.starz.com/us/en/login",
+    "background": "background: linear-gradient(to bottom, #222021 0%, #090808 100%);"
+  },
+  {
+    "id": "twitch",
+    "title": "Twitch",
+    "logo": "/assets/dist/images/logos/twitch.svg",
+    "url": "https://www.starz.com/us/en/login",
+    "background": "background: #9146FF;"
   },
   {
     "id": "vudu",
     "title": "Vudu",
     "logo": "/assets/dist/images/logos/vudu.svg",
     "url": "https://www.vudu.com/",
-    "background": "background: -webkit-gradient(linear, left top, right top, from(#24619d), to(#317fd5));background: -o-linear-gradient(left, #24619d 0%, #317fd5 100%);background: linear-gradient(to right, #24619d 0%, #317fd5 100%);"
+    "background": "background: linear-gradient(to right, #24619d 0%, #317fd5 100%);"
+  },
+  {
+    "id": "youtubetv",
+    "title": "YouTubeTV",
+    "logo": "/assets/dist/images/logos/youtubetv.svg",
+    "url": "https://tv.youtube.com/",
+    "background": "background: #282828;"
   },
   {
     "id": "espn",
     "title": "ESPN+",
     "logo": "/assets/dist/images/logos/espn.svg",
     "url": "https://www.espn.com/espnplus/",
-    "background": "background: -webkit-gradient(linear, left top, left bottom, from(#103265), to(#000000));background: -o-linear-gradient(top, #103265 0%, #000000 100%);background: linear-gradient(to bottom, #103265 0%, #000000 100%);"
+    "background": "background: linear-gradient(to bottom, #103265 0%, #000000 100%);"
   },
   {
     "id": "paramount",

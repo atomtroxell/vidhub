@@ -1,16 +1,15 @@
 .last-viewed {
   display: none;
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  padding-top: 11px;
+  padding: 0;
   width: 100%;
-  max-width: 500px;
-  height: 40px;
-  @include fontsize(16 18);
-  // font-weight: 600;
+  max-width: calc(100% - 40px);
+  height: 30px;
+  @include fontsize(14 30);
   color: white;
   text-decoration: none;
   text-align: center;
@@ -22,14 +21,12 @@
   animation: fadein ease 1s;
   animation-fill-mode: forwards;
   transition: color ease-in-out 0.2s;
-  @include large-up {
+  @include medium-up {
     top: 20px;
+    height: 40px;
+    max-width: 500px;
+    @include fontsize(16 40);
   }
-
-  // a {
-  //   font-weight: 600;
-  //   color: white;
-  //   text-decoration: none;
 
   &:visited {
     color: white;
@@ -40,54 +37,64 @@
     color: #f05931;
     text-decoration: none;
   }
-  // }
 }
 
 .services-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url('/assets/dist/images/bg-01.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: fadein ease 1s;
-  animation-fill-mode: forwards;
 }
 
 .services {
   display: flex;
-  position: relative;
+  justify-content: start;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 40px;
-  max-width: 1400px;
-  height: 100vh;
-  @include medium-up {
-    // padding: 0 40px 40px;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  @at-root body.show-recent .services {
+    padding-top: 40px;
   }
   @include large-up {
-    padding: 80px;
+    padding: 20px;
+    @at-root body.show-recent .services {
+      padding-top: 80px;
+    }
   }
 
   div {
-    position: relative;
-    width: calc(100% / 3 - 40px);
-    height: calc(100vh / 5);
-    border-radius: 25px;
-    border: 5px solid rgba(white, 0.2);
-    box-shadow: 0px 0px 10px 0px rgba(black, 0.1);
+    flex: 0 0 calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 15px;
+    box-sizing: border-box;
     animation: fadein ease 2s 2.5s;
     animation-fill-mode: forwards;
     opacity: 0;
     overflow: hidden;
-    transition: transform .2s;
+    transition: transform 0.2s;
     @include medium-up {
-      height: calc(100vh / 6);
+      flex: 0 0 calc(100% / 3);
+    }
+    @include large-up {
+      flex: 0 0 calc(100% / 4);
+    }
+    @include xlarge-up {
+      flex: 0 0 calc(100% / 5);
+    }
+    &:before {
+      content: '';
+      display: table;
+      padding-top: 100%;
     }
 
     &:hover,
     &:focus {
-      border-color: rgba(white, 0.5);
-      box-shadow: 0px 0px 20px 0px rgba(black, 0.2);
       transform: scale(1.1);
 
       .title {
@@ -99,16 +106,27 @@
   .service {
     cursor: pointer;
     display: block;
+    padding: 5px;
     width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    @include large-up {
+      padding: 15px;
+    }
 
     .logo {
       display: block;
       width: 100%;
       height: 100%;
       background-position: center center;
-      background-size: 50% auto;
+      background-size: 80% auto;
       background-repeat: no-repeat;
+      @include medium-up {
+        background-size: 50% auto;
+      }
+      @include large-up {
+        background-size: contain;
+      }
     }
 
     .title {
